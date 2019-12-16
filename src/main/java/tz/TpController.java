@@ -60,7 +60,7 @@ public class TpController {
     void unexpectedPath(@PathVariable String path){
         System.out.println(path);
         if (!path.equalsIgnoreCase("rates"))
-            //выбрасываем ошибку для get запросов кроме rates, хотя есть подозрение что это стоит не так делать, опыта в этом мало
+            //выбрасываем ошибку для get запросов кроме rates, хотя есть подозрение что это стоит не так делать
             throw new UnexpectedPathException(path);
     }
     
