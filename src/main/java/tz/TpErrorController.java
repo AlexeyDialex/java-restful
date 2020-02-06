@@ -42,10 +42,9 @@ class CurrencyNotFoundException extends RuntimeException {
 class TypeNotFoundException extends RuntimeException {
 
     public TypeNotFoundException(String type) {
-        super("could not find type '" + type + "', try for example BTC or BCH ");
+        super("could not find type '" + type + "', try BTC or BCH ");
     }
 }
-
 
 class UnexpectedPathException extends RuntimeException {
 
